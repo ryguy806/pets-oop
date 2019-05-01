@@ -1,0 +1,16 @@
+{
+  "name": "aharring/328/pets-oop",
+  "authors": [
+    {
+      "name": "Andrew Harrington",
+      "email": "aharrington4@mail.greenriver.edu"
+    },
+    {
+      "name": "Ryan Guelzo",
+      "email": "rguelzo@mail.greenriver.edu"
+    }
+  ],
+  "require": {
+    "bcosca/fatfree-core": "dev-master"
+  }
+}
