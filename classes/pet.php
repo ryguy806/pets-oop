@@ -6,20 +6,20 @@ class Pet{
     private $_name;
     private $_color;
 
-    function __construct($name='unknown', $color='?'){
+    public function __construct($name='unknown', $color='?'){
         $this->_name = $name;
         $this->_color=$color;
     }
 
-    function eat(){
+    public function eat(){
         echo "<p>".$this->_name . " is eating.</p>"; //Note, no $ is used on the name variable.
     }
 
-    function sleep(){
+    public function sleep(){
         echo "<p>".$this->_name . " is sleeping.</p>";
     }
 
-    function getName(){
+    public function getName(){
         return $this->_name;
     }
 
@@ -36,5 +36,9 @@ class Pet{
     public function setColor($color)
     {
         $this->_color = $color;
+    }
+
+    public function talk(){
+        echo "<p>" . $this->_name . " is talking.</p>";
     }
 }

@@ -8,6 +8,8 @@ require_once('vendor/autoload.php');
 
 //New class instance
 require('classes/pet.php');
+require('classes/dog.php');
+require('classes/cat.php');
 
 $f3 = Base::instance();
 
@@ -35,6 +37,11 @@ $f3->route('GET /', function ($f3) {
     $f3->set('pet3', $pet3);
     $f3->set('pet4', $pet4);
 
+    $pets = array($pet1, $pet2, $pet3, $pet4);
+
+    foreach($pets as $pet){
+        $pet->talk();
+    }
 });
 
 $f3->run();
